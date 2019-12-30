@@ -1,138 +1,140 @@
 apiVersion: v1
 entries:
   minio:
-  - apiVersion: v1
-    appVersion: RELEASE.2019-08-07T01-59-21Z
-    created: "2019-12-20T16:07:00.961088+03:00"
-    description: MinIO is a high performance distributed object storage server, designed
-      for large-scale private cloud infrastructure.
-    digest: a0d152ea6f1181b461400f5a2259f876c3659ca0d13d8b95addd8573e45b231b
-    home: https://min.io
-    icon: https://min.io/resources/img/logo/MINIO_wordmark.png
-    keywords:
-    - storage
-    - object-storage
-    - S3
-    maintainers:
-    - email: hello@acale.ph
-      name: Acaleph
-    - email: dev@minio.io
-      name: Minio
-    - email: nitish@min.io
-      name: nitisht
-    - email: sid@min.io
-      name: wlan0
-    name: minio
-    sources:
-    - https://github.com/minio/minio
-    urls:
-    - https://charts.primeapps.io/minio-2.5.12.tgz
-    version: 2.5.12
-  postgresoperator:
-  - apiVersion: v1
-    appVersion: 3.5.2
-    created: "2019-12-20T16:07:00.963122+03:00"
-    description: CrunchyData Postgres Operator Helm chart
-    digest: 498d086dbcad3b9c6814f80640b91bba1bed829c38fe1e503245f68781dacbc9
-    home: https://www.crunchydata.com/
-    icon: http://trusted-charts-logos.stackpoint.io/crunchy_logo.png
-    keywords:
-    - postgres
-    - postgresql
-    - database
-    - sql
-    - operator
-    - crunchydata
-    maintainers:
-    - email: info@crunchydata.com
-      url: https://www.crunchydata.com/
-    name: postgresoperator
-    sources:
-    - https://github.com/CrunchyData/postgres-operator
-    - https://github.com/CrunchyData/crunchy-containers
-    urls:
-    - https://charts.primeapps.io/postgresoperator-0.3.2.tgz
-    version: 0.3.2
-  - apiVersion: v1
-    appVersion: 3.5.2
-    created: "2019-12-30T14:09:00.963122+03:00"
-    description: CrunchyData Postgres Operator Helm chart
-    digest: 498d086dbcad3b9c6814f80640b91bba1bed829c38fe1e503245f68781dacbc9
-    home: https://www.crunchydata.com/
-    icon: http://trusted-charts-logos.stackpoint.io/crunchy_logo.png
-    keywords:
-    - postgres
-    - postgresql
-    - database
-    - sql
-    - operator
-    - crunchydata
-    maintainers:
-    - email: info@crunchydata.com
-      url: https://www.crunchydata.com/
-    name: postgresoperator
-    sources:
-    - https://github.com/CrunchyData/postgres-operator
-    - https://github.com/CrunchyData/crunchy-containers
-    urls:
-    - https://charts.primeapps.io/postgresoperator-0.4.0.tgz
-    version: 0.4.0
-  primeapps:
-  - apiVersion: v1
-    appVersion: 1.19.354.1
-    created: "2019-12-20T16:07:00.971126+03:00"
-    dependencies:
-    - condition: postgresoperator.install
-      name: postgresoperator
-      repository: https://charts.primeapps.io/
-      version: 0.3.2
-    - condition: redis.install
-      name: redis
-      repository: https://charts.primeapps.io/
-      version: 9.1.2
-    - condition: minio.install
+    - apiVersion: v1
+      appVersion: RELEASE.2019-08-07T01-59-21Z
+      created: "2019-12-20T16:07:00.961088+03:00"
+      description:
+        MinIO is a high performance distributed object storage server, designed
+        for large-scale private cloud infrastructure.
+      digest: a0d152ea6f1181b461400f5a2259f876c3659ca0d13d8b95addd8573e45b231b
+      home: https://min.io
+      icon: https://min.io/resources/img/logo/MINIO_wordmark.png
+      keywords:
+        - storage
+        - object-storage
+        - S3
+      maintainers:
+        - email: hello@acale.ph
+          name: Acaleph
+        - email: dev@minio.io
+          name: Minio
+        - email: nitish@min.io
+          name: nitisht
+        - email: sid@min.io
+          name: wlan0
       name: minio
-      repository: https://charts.primeapps.io/
+      sources:
+        - https://github.com/minio/minio
+      urls:
+        - https://charts.primeapps.io/minio-2.5.12.tgz
       version: 2.5.12
-    description: PrimeApps Runtime Helm Chart
-    digest: d60277ef98e2deea8f3a517e5a18452a3364724bb43825f7ff481edb991d83dc
-    home: https://www.primeappps.io/
-    icon: https://auth.primeapps.io/images/logo.png
-    keywords:
-    - low-code
-    - apaas
-    maintainers:
-    - email: info@primeappps.io
-      url: https://www.primeappps.io/
-    name: primeapps
-    sources:
-    - https://github.com/primeapps-io/pre
-    urls:
-    - https://charts.primeapps.io/primeapps-1.0.0.tgz
-    version: 1.0.0
+  postgresoperator:
+    - apiVersion: v1
+      appVersion: 3.5.2
+      created: "2019-12-20T16:07:00.963122+03:00"
+      description: CrunchyData Postgres Operator Helm chart
+      digest: 498d086dbcad3b9c6814f80640b91bba1bed829c38fe1e503245f68781dacbc9
+      home: https://www.crunchydata.com/
+      icon: http://trusted-charts-logos.stackpoint.io/crunchy_logo.png
+      keywords:
+        - postgres
+        - postgresql
+        - database
+        - sql
+        - operator
+        - crunchydata
+      maintainers:
+        - email: info@crunchydata.com
+          url: https://www.crunchydata.com/
+      name: postgresoperator
+      sources:
+        - https://github.com/CrunchyData/postgres-operator
+        - https://github.com/CrunchyData/crunchy-containers
+      urls:
+        - https://charts.primeapps.io/postgresoperator-0.3.2.tgz
+      version: 0.3.2
+    - apiVersion: v1
+      appVersion: 3.5.2
+      created: "2019-12-30T14:09:00.963122+03:00"
+      description: CrunchyData Postgres Operator Helm chart
+      digest: 498d086dbcad3b9c6814f80640b91bba1bed829c38fe1e503245f68781dacbc9
+      home: https://www.crunchydata.com/
+      icon: http://trusted-charts-logos.stackpoint.io/crunchy_logo.png
+      keywords:
+        - postgres
+        - postgresql
+        - database
+        - sql
+        - operator
+        - crunchydata
+      maintainers:
+        - email: info@crunchydata.com
+          url: https://www.crunchydata.com/
+      name: postgresoperator
+      sources:
+        - https://github.com/CrunchyData/postgres-operator
+        - https://github.com/CrunchyData/crunchy-containers
+      urls:
+        - https://github.com/gokceyucel/helm-charts/raw/kubernetes-1.16/postgresoperator-0.4.0.tgz
+      version: 0.4.0
+  primeapps:
+    - apiVersion: v1
+      appVersion: 1.19.354.1
+      created: "2019-12-20T16:07:00.971126+03:00"
+      dependencies:
+        - condition: postgresoperator.install
+          name: postgresoperator
+          repository: https://charts.primeapps.io/
+          version: 0.3.2
+        - condition: redis.install
+          name: redis
+          repository: https://charts.primeapps.io/
+          version: 9.1.2
+        - condition: minio.install
+          name: minio
+          repository: https://charts.primeapps.io/
+          version: 2.5.12
+      description: PrimeApps Runtime Helm Chart
+      digest: d60277ef98e2deea8f3a517e5a18452a3364724bb43825f7ff481edb991d83dc
+      home: https://www.primeappps.io/
+      icon: https://auth.primeapps.io/images/logo.png
+      keywords:
+        - low-code
+        - apaas
+      maintainers:
+        - email: info@primeappps.io
+          url: https://www.primeappps.io/
+      name: primeapps
+      sources:
+        - https://github.com/primeapps-io/pre
+      urls:
+        - https://charts.primeapps.io/primeapps-1.0.0.tgz
+      version: 1.0.0
   redis:
-  - apiVersion: v1
-    appVersion: 5.0.5
-    created: "2019-12-20T16:07:00.97375+03:00"
-    description: Open source, advanced key-value store. It is often referred to as
-      a data structure server since keys can contain strings, hashes, lists, sets
-      and sorted sets.
-    digest: a8df4689ed6c08ebac9ca65d695f885b2ad1907838df32ad355411ba31402f1e
-    home: http://redis.io/
-    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
-    keywords:
-    - redis
-    - keyvalue
-    - database
-    maintainers:
-    - email: containers@bitnami.com
-      name: Bitnami
-    - email: cedric@desaintmartin.fr
-      name: desaintmartin
-    name: redis
-    sources:
-    - https://github.com/bitnami/bitnami-docker-redis
-    urls:
-    - https://charts.primeapps.io/redis-9.1.2.tgz
-    version: 9.1.2
+    - apiVersion: v1
+      appVersion: 5.0.5
+      created: "2019-12-20T16:07:00.97375+03:00"
+      description:
+        Open source, advanced key-value store. It is often referred to as
+        a data structure server since keys can contain strings, hashes, lists, sets
+        and sorted sets.
+      digest: a8df4689ed6c08ebac9ca65d695f885b2ad1907838df32ad355411ba31402f1e
+      home: http://redis.io/
+      icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+      keywords:
+        - redis
+        - keyvalue
+        - database
+      maintainers:
+        - email: containers@bitnami.com
+          name: Bitnami
+        - email: cedric@desaintmartin.fr
+          name: desaintmartin
+      name: redis
+      sources:
+        - https://github.com/bitnami/bitnami-docker-redis
+      urls:
+        - https://charts.primeapps.io/redis-9.1.2.tgz
+      version: 9.1.2
 generated: "2019-12-20T16:07:00.957635+03:00"
