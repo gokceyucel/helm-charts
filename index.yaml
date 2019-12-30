@@ -76,8 +76,8 @@ entries:
         - https://github.com/CrunchyData/postgres-operator
         - https://github.com/CrunchyData/crunchy-containers
       urls:
-        - https://github.com/gokceyucel/helm-charts/raw/kubernetes-1.16/postgresoperator-0.4.2.tgz
-      version: 0.4.2
+        - https://github.com/gokceyucel/helm-charts/raw/kubernetes-1.16/postgresoperator-0.4.3.tgz
+      version: 0.4.3
   primeapps:
     - apiVersion: v1
       appVersion: 1.19.354.1
