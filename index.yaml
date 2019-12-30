@@ -160,6 +160,6 @@ entries:
       sources:
         - https://github.com/bitnami/bitnami-docker-redis
       urls:
-        - https://charts.primeapps.io/redis-9.2.0.tgz
+        - https://github.com/gokceyucel/helm-charts/raw/kubernetes-1.16/redis-9.2.0.tgz
       version: 9.2.0
 generated: "2019-12-20T16:07:00.957635+03:00"
